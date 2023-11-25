@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin-left: 12.3rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  color: #000;
+}

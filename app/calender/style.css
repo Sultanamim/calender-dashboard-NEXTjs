@@ -1,0 +1,262 @@
+.main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin-left: 12.3rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 40px 20px;
+  color: #000;
+}
+
+.calendar button.add {
+  width: 120px;
+}
+.calendar button.delete {
+  width: 160px;
+}
+table {
+  /* background-color: rgb(251, 253, 255); */
+  /* box-shadow: 4px 2px 29px -4px rgba(0, 0, 0, 0.14); */
+  width: 100%;
+}
+.calendar .col-md-9 {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+table tr:first-child td {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #efe9e9;
+  border-top: 1px solid #d8d5d5;
+  border-bottom: 1px solid #d8d5d5;
+  border-right: 1px solid #a5a1a1;
+  padding: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+tr {
+  border-bottom: 1px solid #f6ebeb;
+}
+tr td {
+  padding: 10px 6px;
+  border: 1px solid #f6ebeb;
+  text-align: center;
+  height: max-content;
+  width: 100px;
+}
+tr td:first-child {
+  border-right: 1px solid #f6ebeb;
+}
+td:hover {
+  background-color: rgb(233, 236, 238);
+}
+td.day .row {
+  margin: 0;
+  padding: 0;
+}
+.avt {
+  background-color: #fff;
+  padding: 12px 10px;
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.avt.row {
+  padding-top: 0;
+}
+.avt h4 {
+  font-size: 20px;
+  padding: 14px 0;
+  border-bottom: 1px solid #c4bdbd;
+  border-top: 1px solid #c4bdbd;
+}
+.avt.emp {
+  margin: 5px 2px;
+  padding: 10px 5px;
+  /* border-bottom: 1px solid #f6ebeb; */
+}
+.avt img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid purple;
+  margin-right: 8px;
+}
+.events {
+  background-color: #fff;
+  padding: 12px 10px;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.events.row {
+  padding-top: 0;
+}
+.events h4 {
+  font-size: 20px;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  border-bottom: 1px solid #c4bdbd;
+  border-top: 1px solid #c4bdbd;
+  background-color: #efe9e9;
+}
+.events .event-cell {
+  padding: 5px 8px;
+  color: #000;
+  margin: 8px 3px;
+  border: 2px solid rgb(27, 101, 2);
+  background-color: #d3ede4;
+  text-align: center;
+  border-radius: 10px;
+}
+.event-table .event-cell {
+  padding: 5px 0;
+  color: #000;
+  margin: 8px 2px;
+  border: 2px solid rgb(27, 101, 2);
+  background-color: #d3ede4;
+  text-align: center;
+  border-radius: 10px;
+}
+.event-cell.selected {
+  background-color: #d6a1b9;
+  border: 2px solid #ed006b;
+}
+.events .event-cell p {
+  text-align: left;
+  font-size: 12px;
+}
+.event-table .event-cell p {
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 2px;
+}
+/* .events .event-cell p.light {
+  color: rgb(161, 154, 154);
+} */
+.events .draggable-event {
+  /* Your existing styles for events */
+  cursor: move;
+}
+
+.events .dragging {
+  opacity: 0.5;
+}
+.events .event-cell {
+  width: 175px;
+  height: 96px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.events .event-in-cell {
+  /* Additional styles for events inside the table cells */
+  margin-bottom: 5px;
+}
+.event-cell p svg {
+  color: rgb(64, 237, 48);
+  font-size: 15px;
+  margin-right: 4px;
+}
+.event-cell p svg.fa-moon {
+  color: blue;
+}
+.event-cell img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.event-cell p.night {
+  color: blue;
+}
+.event-cell p.day {
+  color: rgb(64, 237, 48);
+}
+.modal-header {
+  border: none;
+}
+.modal-header .modal-title {
+  color: #000;
+}
+.modal-body label {
+  color: #000;
+}
+.modal-body label.form-label {
+  font-size: 18px;
+  font-weight: 600;
+}
+.modal-footer {
+  border: none;
+}
+.modal-body p {
+  color: #000;
+}
+.event-cell img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid purple;
+  margin-right: 8px;
+}
+p {
+  margin-bottom: 0;
+}
+div.events {
+  height: 80vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+@media (max-width: 1300px) {
+  .main {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .main table,
+  .main tr {
+    width: 100%;
+  }
+  .main table td {
+    width: 142px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .main table,
+  .main tr {
+    width: 1033px;
+  }
+  .main table td {
+    width: 142px;
+  }
+}
+@media (max-width: 992px) {
+  .main {
+    margin-left: 10rem;
+  }
+  .row.events {
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .events h4 {
+    padding: 0;
+    min-width: 1033px;
+    height: 80px;
+    text-align: center;
+    background-color: #efe9e9;
+    background-size: cover;
+  }
+}
